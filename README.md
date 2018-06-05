@@ -7,7 +7,7 @@ React是什么？它是一种编程语言，它有这样一些特性：
   * 符合ECMA Script 6；
   * 学习曲线较为平缓，有JavaScript基础以及其他编程语言基础的话，很容易上手。
 
-就拿我个人而言，我之前有[[http://php.net/|PHP]]的编程经验，用的是著名的[[http://symfony.com/|Symfony]]框架，完成了自己的[[https://rsywx.net|“任氏有无轩”]]藏书管理程序。从2017年3月15日开始，学习[[https://facebook.github.io/react/|React]]的学习，每天基本只有最多2个小时的学习和编程时间，到4月15日，完成了“任氏有无轩”的React改写。
+就拿我个人而言，我之前有[PHP](http://php.net/)的编程经验，用的是著名的[Symfony](http://symfony.com/)框架，完成了自己的[“任氏有无轩”](https://rsywx.net)藏书管理程序。从2017年3月15日开始，学习[React](https://facebook.github.io/react/)的学习，每天基本只有最多2个小时的学习和编程时间，到4月15日，完成了“任氏有无轩”的React改写。
 
 ![](http://rsywx.com/lib/exe/fetch.php/react:00-01.png?w=800&tok=f50c8d)
 
