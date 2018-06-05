@@ -14,11 +14,11 @@ React有非常丰富的“组件”支持，路由也是其中的一个组件。
 
 如果我们已经安装好了yarn，那么可以用如下的命令安装：
 
->yarn add react-router-dom
+> yarn add react-router-dom
 
 如果你偏好用npm安装，那么可以输入如下的命令：
 
->npm install react-router-dom
+> npm install react-router-dom
 
 ## index.html
 
@@ -30,7 +30,7 @@ React有非常丰富的“组件”支持，路由也是其中的一个组件。
 
 `/public/index.html`这个文件最重要的内容是如下这一段：
 
-```
+```text
 <body>
     <div id="root"></div>
 </body>
@@ -44,7 +44,7 @@ React有非常丰富的“组件”支持，路由也是其中的一个组件。
 
 修改后的文件内容大致如下：
 
-```
+```text
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -100,7 +100,7 @@ React有非常丰富的“组件”支持，路由也是其中的一个组件。
 
 我们再来看下现在的`/src/index.js`文件是怎样的：
 
-```
+```text
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
@@ -116,7 +116,7 @@ ReactDOM.render(
 
 我们可以对这个文件进行一些微调。因为我们已经在`/public/index.html`中对CSS文件进行了统一引用，所以不需要专门再引入一个特定的CSS文件（`./index.css`）：
 
-```
+```text
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
@@ -134,7 +134,7 @@ ReactDOM.render(
 
 现在的`/src/App.js`文件是这样的：
 
-```
+```text
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -155,14 +155,14 @@ class App extends Component {
   }
 }
 
-export default App; 
+export default App;
 ```
 
 既然我们要用路由来调度我们的页面，在这里就不应该明确地指定渲染什么内容。我们需要做的是创建一个路由配置，并让该路由配置根据我们访问的路径来生成不同的页面。
 
 于是我们将该文件修改如下：
 
-```
+```text
 import React, { Component } from 'react';
 
 import RoutingConfig from './RoutingConfig'
@@ -186,7 +186,7 @@ export default App;
 
 让我们来创建这个`/src/RoutingConfig.js`文件：
 
-```
+```text
 import React from 'react';
 import {
   BrowserRouter as Router,
@@ -206,15 +206,16 @@ const RoutingConfig = () => (
 
 export default RoutingConfig;
 ```
+
 这个文件将是我们的路由调度员。现在我们只声明了一个路由：
 
-><Route exact path="/" component={Home}/>
+>
 
 它表示：如果访问的页面路径是`/`（`path="/"`）（也就是所谓的首页），那么要渲染的组件应该是`Home`（`component={Home}`）。
 
 对`Home`组件的引用在`/src/RoutingConfig.js`文件的开始得到声明：
 
->import Home from './Home';
+> import Home from './Home';
 
 我们现在还没有创建''Home''组件。我们下一步要做的就是这个事情。
 
@@ -222,7 +223,7 @@ export default RoutingConfig;
 
 让我们来创建`/src/Home.js`文件。作为开始，我们只要很简单地显示一行文字证明我们已经来到这个页面即可：
 
-```
+```text
 import React, { Component } from 'react';
 
 class Home extends Component {
@@ -244,7 +245,7 @@ export default Home;
 
 在这个Home组件的`render`函数中，我们看到它的`return`语句返回了一串很奇怪的东西：
 
-```
+```text
 return (
   <div>
     <h1 className="red">Hello world!</h1>
@@ -281,3 +282,4 @@ return (
 让我们用一张图来总结一下我们到目前为止学到的东西。
 
 ![](http://rsywx.com/lib/exe/fetch.php/react:02-03.png)
+

@@ -26,9 +26,9 @@ node.js安装完毕后，也会安装好`npm`，并设置好相应的环境变�
 
 React使用create-react-app作为应用开发的自举入口，所以我们需要安装这个程序包：
 
->npm install -g create-react-app
+> npm install -g create-react-app
 
-** 注意：**如果是在Windows操作系统下，有可能需要在管理员权限下执行上面这个命令。
+ **注意：**如果是在Windows操作系统下，有可能需要在管理员权限下执行上面这个命令。
 
 create-react-app安装完毕后，我们就完成了使用React进行Web开发的所有必要程序的安装。
 
@@ -44,9 +44,7 @@ create-react-app安装完毕后，我们就完成了使用React进行Web开发�
 
 ![](http://rsywx.com/lib/exe/fetch.php/react:01-03.png)
 
->node_modules：这里保存着所有本应用开发时需要用到的node.js开发模块。
->src：我们的编程基本上在这里进行。
->public：应用的入口文件（index.html）和相应的支持文件（如CSS、图片、JS库等）都会放在这里。
+> node\_modules：这里保存着所有本应用开发时需要用到的node.js开发模块。 src：我们的编程基本上在这里进行。 public：应用的入口文件（index.html）和相应的支持文件（如CSS、图片、JS库等）都会放在这里。
 
 运行一下！
 
@@ -61,3 +59,4 @@ create-react-app安装完毕后，我们就完成了使用React进行Web开发�
 OK！我们的第一个React应用已经完成了！
 
 在后续的教程中，我们会在这个基础上逐步修改、增加我们的内容。
+
