@@ -1,4 +1,4 @@
-# Table of contents
+# 目录
 
 * [README](README.md)
 * [安装](chap01.md)
